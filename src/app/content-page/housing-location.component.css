@@ -1,0 +1,67 @@
+/* Container for each housing location listing */
+.listing {
+  background: blue; /* White background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Padding inside the listing */
+  width: 250px;
+  margin: 10px;
+  justify-content: center;
+    text-align: center; /* Center align text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+
+.listing:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading for the housing location */
+.listing-heading {
+  color: #333333; /* Dark text color */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  margin-top: 15px; /* Margin top */
+}
+
+/* Photo of the housing location */
+.listing-photo {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 20px 20px 0 0; /* Rounded top corners */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.listing-photo:hover {
+  opacity: 0.9; /* Reduced opacity on hover */
+}
+
+/* Location details */
+.listing-location {
+  color: #666666; /* Lighter text color */
+  font-size: 1rem; /* Normal font size */
+  margin-top: 10px; /* Margin top */
+}
+
+.listing-location::before {
+  content: url("/assets/location-pin.svg") " "; /* Location icon */
+  margin-right: 8px; /* Spacing between icon and text */
+}
+
+/* Book now link */
+section.listing a {
+  display: inline-block; /* Inline block for padding */
+  padding: 10px 20px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  color: #333333; /* Dark text color */
+  font-weight: bold; /* Bold text */
+  
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+section.listing a:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+  color: #555555; /* Darker text on hover */
+}

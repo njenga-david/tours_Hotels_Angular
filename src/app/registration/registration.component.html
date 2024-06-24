@@ -1,0 +1,15 @@
+<div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username">
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password">
+  
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword">
+  
+    <button (click)="register()">Register</button>
+  
+    <p *ngIf="registrationError" class="error">{{ registrationError }}</p>
+  </div>
+  
